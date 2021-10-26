@@ -40,6 +40,7 @@ function App() {
 
   return (
     <div className="App">
+      <h1 className="title">Recipe Searcher</h1>
       <form onSubmit={getSearch} className="search-form">
         <input
           className="search-bar"
@@ -51,15 +52,17 @@ function App() {
           Search
         </button>
       </form>
-      {recipes.map((recipe, index) => (
-        <Recipe
-          key={index}
-          title={recipe.recipe.label}
-          calories={recipe.recipe.calories}
-          image={recipe.recipe.image}
-          ingredients={recipe.recipe.ingredients}
-        />
-      ))}
+      <div className="recipes">
+        {recipes.map((recipe, index) => (
+          <Recipe
+            key={index}
+            title={recipe.recipe.label}
+            calories={recipe.recipe.calories}
+            image={recipe.recipe.image}
+            ingredients={recipe.recipe.ingredients}
+          />
+        ))}
+      </div>
     </div>
   );
 }

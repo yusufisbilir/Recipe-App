@@ -1,0 +1,32 @@
+.recipe {
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 3px 10px #999999;
+          box-shadow: 0px 3px 10px #999999;
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #fff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 40%;
+}
+
+.image {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 1rem;
+}
+
+.ingradient {
+  list-style-type: disc;
+  margin: 10px;
+}
+/*# sourceMappingURL=recipe.module.css.map */
